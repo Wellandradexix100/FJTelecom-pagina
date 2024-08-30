@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FJTelecom - O seu provedor de Internet</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Link para o arquivo CSS -->
+  </head>
+  <body class="bg-gray-100">
+    <!-- Navbar flutuante -->
+    <nav class="navbar bg-white shadow-lg fixed top-0 w-full z-50">
+      <div class="container mx-auto flex justify-between items-center p-4">
+        <a href="#">
+          <img src="assets/logo.png" alt="FJ Telecom Logo" class="h-20 ml-3" />
+        </a>
+        <ul class="menu hidden md:flex space-x-6 text-gray-700">
+          <li><a href="#" class="nav-a">Home</a></li>
+          <li><a href="#" class="nav-a">Planos</a></li>
+          <li><a href="#" class="nav-a">Quem somos</a></li>
+          <li><a href="#" class="nav-a">Cobertura</a></li>
+          <li><a href="#" class="nav-a">Serviços</a></li>
+          <li><a href="#" class="nav-a">Contato</a></li>
+          <li><a href="#" class="nav-a">Nossos Apps</a></li>
+        </ul>
+        <button
+          title="menu-hamburguer"
+          id="menu-toggle"
+          class="md:hidden p-2 text-gray-700 hover:text-red-500 focus:outline-none"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
+        <ul
+          id="menu"
+          class="md:hidden absolute top-16 right-0 bg-white shadow-lg w-48 py-2 hidden"
+        >
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-200">Home</a>
+          </li>
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-200">Planos</a>
+          </li>
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-200">Quem somos</a>
+          </li>
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-200">Cobertura</a>
+          </li>
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-200">Serviços</a>
+          </li>
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-200">Contato</a>
+          </li>
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-200"
+              >Nossos Apps</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://fjtelecom.sgp.net.br/accounts/central/login"
+              class="block px-4 py-2 hover:bg-gray-200"
+              >Área do cliente</a
+            >
+          </li>
+        </ul>
+        <button class="menu cta-button hidden md:inline-block">
+          <a
+            rel="noopener"
+            href="https://fjtelecom.sgp.net.br/accounts/central/login"
+            target="_blank"
+            >Área do Cliente</a
+          >
+        </button>
+      </div>
+    </nav>
+
+    <!-- Banner -->
+    <section class="banner">
+      <div class="banner-content">
+        <div class="text">
+          <h1 class="text-6xl font-bold mb-4">
+            Conecte-se com a melhor internet da região!
+          </h1>
+          <p class="text-lg mb-4">
+            Planos acessíveis e soluções confiáveis para você e sua família.
+            Venha descobrir como podemos transformar sua experiência online!
+          </p>
+          <a href="#" class="cta-button-p inline-block"
+            >Escolha seu plano agora!</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Script para o menu hamburguer -->
+    <script>
+      document
+        .getElementById("menu-toggle")
+        .addEventListener("click", function () {
+          var menu = document.getElementById("menu");
+          menu.classList.toggle("hidden");
+        });
+    </script>
+  </body>
+</html>
