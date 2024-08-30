@@ -16,7 +16,7 @@
 }
 
 .banner {
-  background-image: url("./assets/home.png");
+  background-image: url("../assets/home.png");
   background-size: cover;
   background-position: center;
   min-height: 100vh;
