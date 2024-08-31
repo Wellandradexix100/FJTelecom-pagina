@@ -5,18 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FJTelecom - O seu provedor de Internet</title>
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <!-- Link para o arquivo CSS -->
   </head>
   <body class="bg-gray-100">
-    <!-- Navbar flutuante -->
+    <!-- Navbar-->
     <nav class="navbar bg-white shadow-lg fixed top-0 w-full z-50">
       <div class="container mx-auto flex justify-between items-center p-4">
         <a href="#">
-          <img src="assets/logo.png" alt="FJ Telecom Logo" class="h-20 ml-3" />
+          <img src="assets/logo.png" alt="FJ Telecom Logo" class="h-12 ml-3" />
         </a>
         <ul class="menu hidden md:flex space-x-6 text-gray-700">
           <li><a href="#" class="nav-a">Home</a></li>
@@ -49,7 +53,7 @@
         </button>
         <ul
           id="menu"
-          class="md:hidden absolute top-16 right-0 bg-white shadow-lg w-48 py-2 hidden"
+          class="md:hidden absolute top-16 right-0 bg-white shadow-lg w-44 py-2 hidden"
         >
           <li>
             <a href="#" class="block px-4 py-2 hover:bg-gray-200">Home</a>
@@ -82,12 +86,15 @@
             >
           </li>
         </ul>
-        <button class="menu cta-button hidden md:inline-block">
+        <button
+          class="menu gap-1 grid gap-2 grid-cols-1 grid-rows-1 cta-button hidden md:inline-block"
+        >
+          <i class="fa fa-user display-block pt-1" aria-hidden="true"></i>
           <a
             rel="noopener"
             href="https://fjtelecom.sgp.net.br/accounts/central/login"
             target="_blank"
-            >Área do Cliente</a
+            >Central</a
           >
         </button>
       </div>
@@ -110,15 +117,12 @@
         </div>
       </div>
     </section>
-
-    <!-- Script para o menu hamburguer -->
-    <script>
-      document
-        .getElementById("menu-toggle")
-        .addEventListener("click", function () {
-          var menu = document.getElementById("menu");
-          menu.classList.toggle("hidden");
-        });
-    </script>
+    <!--Container de planos-->
+    <section
+      class="container-xl m-15 mb-10 mt-10 columns-5"
+      id="planos-container"
+    ></section>
+    <!--Esse script carrega a função hamburguer do menu e os planos-->
+    <script src="js/script.js"></script>
   </body>
 </html>

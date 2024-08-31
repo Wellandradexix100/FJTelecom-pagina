@@ -11,7 +11,7 @@
   top: 0;
   width: 100%;
   z-index: 50;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   background-color: rgba(255, 255, 255, 0.473);
 }
 
@@ -22,28 +22,31 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   color: rgb(255, 255, 255);
-  margin-top: 7rem;
   text-align: center;
+  margin-top: 5rem;
   padding: 0 1rem;
   text-shadow: 0.4rem 0.4rem 0.8rem rgba(0, 0, 0, 0.5);
   font-weight: 600;
 }
 
 .banner-content {
+  display: flex;
   max-width: 800px;
   width: 100%;
 }
 
 .cta-button {
+  font-size: 1rem;
   background-color: #0059ff;
-  padding: 0.75rem 1.5rem;
+  padding: 0.4rem 1rem;
   border-radius: 2rem;
   color: white;
   font-weight: bold;
   text-align: center;
   transition: background-color 0.3s, transform 0.3s;
+  margin-right: 10rem;
 }
 
 .cta-button:hover {
@@ -78,4 +81,8 @@
 
 .nav-a:hover {
   color: rgb(255, 123, 0);
+}
+
+.contratar {
+  padding-bottom: 1rem;
 }
