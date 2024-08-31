@@ -81,7 +81,7 @@
   transform: scale(1.05);
   background-color: whitesmoke;
 }
-@media (min-width: 768px) {
+@media (min-width: 1300px) {
   .navbar .menu {
     display: flex;
   }
@@ -93,4 +93,9 @@
 
 .contratar {
   padding-bottom: 1rem;
+}
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
