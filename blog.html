@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog da FJTelecom</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/blog.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+      }
+      .hero-bg {
+        background-image: url(/assets/FJ-Site-1.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+    <!-- Header -->
+    <header
+      class="hero-bg h-48 sm:h-64 text-white flex items-center justify-center"
+    >
+      <div
+        class="bg-black bg-opacity-50 h-full w-full flex items-center justify-center"
+      >
+        <h1 class="text-3xl sm:text-5xl font-bold">Blog da FJTelecom</h1>
+      </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md">
+      <div
+        class="container mx-auto flex justify-center space-x-3 sm:space-x-6 p-4"
+      >
+        <a href="#home" class="hover:text-blue-600">Início</a>
+        <a href="#troubleshooting" class="hover:text-blue-600">Soluções</a>
+        <a href="#emby" class="hover:text-blue-600">Emby</a>
+        <a href="#gallery" class="hover:text-blue-600">Galeria</a>
+        <a href="#videos" class="hover:text-blue-600">Vídeos</a>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-6">
+      <!-- Welcome Section -->
+      <section id="home" class="text-center mb-12">
+        <h2 class="text-2xl sm:text-3xl font-semibold mb-4">
+          Bem-vindo ao Blog da FJTelecom
+        </h2>
+        <p class="text-lg">
+          Encontre dicas, truques e soluções para otimizar sua conexão de
+          internet e saiba mais sobre o Emby.
+        </p>
+      </section>
+
+      <!-- Troubleshooting Section -->
+      <section
+        id="troubleshooting"
+        class="bg-yellow-100 py-12 mb-12 rounded-lg shadow-lg"
+      >
+        <div class="container mx-auto text-center">
+          <h2 class="text-3xl sm:text-4xl font-bold mb-6">
+            Como Resolver Problemas de Conexão
+          </h2>
+          <p class="mb-8">
+            Antes de entrar em contato com seu provedor, siga estes passos para
+            solucionar problemas de conexão:
+          </p>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mx-auto max-w-4xl"
+          >
+            <div class="p-4 bg-white rounded-lg shadow-lg">
+              <img
+                src="assets/verificar.jpeg"
+                alt="Verifique os Cabos"
+                class="w-full h-32 object-cover mb-4 rounded-lg"
+              />
+              <h3 class="text-xl font-semibold mb-2">Verifique os Cabos</h3>
+              <p>Certifique-se de que todos os cabos estão bem conectados.</p>
+            </div>
+            <div class="p-4 bg-white rounded-lg shadow-lg">
+              <img
+                src="assets/reiniciar.jpg"
+                alt="Reinicie o Equipamento"
+                class="w-full h-32 object-cover mb-4 rounded-lg"
+              />
+              <h3 class="text-xl font-semibold mb-2">Reinicie o Equipamento</h3>
+              <p>Desconecte e reconecte o modem e roteador.</p>
+            </div>
+            <div class="p-4 bg-white rounded-lg shadow-lg">
+              <img
+                src="assets/status.gif"
+                alt="Verifique o Status da Rede"
+                class="w-full h-32 object-cover mb-4 rounded-lg"
+              />
+              <h3 class="text-xl font-semibold mb-2">
+                Verifique o Status da Rede
+              </h3>
+              <p>Consulte a página de status da rede da sua operadora.</p>
+            </div>
+            <div class="p-4 bg-white rounded-lg shadow-lg">
+              <img
+                src="assets/testar.jpeg"
+                alt="Teste em Outro Dispositivo"
+                class="w-full h-32 object-cover mb-4 rounded-lg"
+              />
+              <h3 class="text-xl font-semibold mb-2">
+                Teste em Outro Dispositivo
+              </h3>
+              <p>Verifique se o problema ocorre em outros dispositivos.</p>
+            </div>
+            <div class="p-4 bg-white rounded-lg shadow-lg">
+              <img
+                src="assets/configuracao.jpeg"
+                alt="Verifique a Configuração do Roteador"
+                class="w-full h-32 object-cover mb-4 rounded-lg"
+              />
+              <h3 class="text-xl font-semibold mb-2">
+                Verifique a Configuração do Roteador
+              </h3>
+              <p>
+                Certifique-se de que o roteador está configurado corretamente.
+              </p>
+            </div>
+            <div class="p-4 bg-white rounded-lg shadow-lg">
+              <img
+                src="assets/contato.png"
+                alt="Entre em Contato com o Provedor"
+                class="w-full h-32 object-cover mb-4 rounded-lg"
+              />
+              <h3 class="text-xl font-semibold mb-2">
+                Entre em Contato com o Provedor
+              </h3>
+              <p>Se o problema persistir, entre em contato com o suporte.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Emby Section -->
+      <section id="emby" class="bg-blue-100 py-12 mb-12 rounded-lg shadow-lg">
+        <div class="container mx-auto text-center">
+          <h2 class="text-3xl sm:text-4xl font-bold mb-6">
+            O que é o Emby e Como se Conectar
+          </h2>
+          <p class="mb-8">
+            O Emby é uma solução de media server que organiza e transmite seu
+            conteúdo de mídia.
+          </p>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mx-auto max-w-4xl"
+          >
+            <div class="p-4 bg-white rounded-lg shadow-lg">
+              <img
+                src="https://via.placeholder.com/150"
+                alt="Instale o Emby App"
+                class="w-full h-32 object-cover mb-4 rounded-lg"
+              />
+              <h3 class="text-xl font-semibold mb-2">Instale o Emby App</h3>
+              <p>Baixe o app Emby em seus dispositivos móveis e smart TVs.</p>
+            </div>
+            <div class="p-4 bg-white rounded-lg shadow-lg">
+              <img
+                src="https://via.placeholder.com/150"
+                alt="Solicite seus dados no nosso whatsapp"
+                class="w-full h-32 object-cover mb-4 rounded-lg"
+              />
+              <h3 class="text-xl font-semibold mb-2">
+                Solicite seus dados no nosso whatsapp
+              </h3>
+              <p>
+                Fale conosco e obtenha o servidor, seu login e sua senha para
+                acessar os nossos serviços.
+              </p>
+            </div>
+            <div class="p-4 bg-white rounded-lg shadow-lg">
+              <img
+                src="https://via.placeholder.com/150"
+                alt="Conecte-se ao Emby Server"
+                class="w-full h-32 object-cover mb-4 rounded-lg"
+              />
+              <h3 class="text-xl font-semibold mb-2">
+                Conecte-se ao Emby Server
+              </h3>
+              <p>Faça login no app para conectar-se ao servidor.</p>
+            </div>
+            <div class="p-4 bg-white rounded-lg shadow-lg">
+              <img
+                src="https://via.placeholder.com/150"
+                alt="Acesse e Transmita seu Conteúdo"
+                class="w-full h-32 object-cover mb-4 rounded-lg"
+              />
+              <h3 class="text-xl font-semibold mb-2">
+                Acesse e Transmita seu Conteúdo
+              </h3>
+              <p>
+                Comece a acessar e assistir nossa infinidade de filmes e series.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Videos Section -->
+      <section id="videos" class="py-12 mb-12">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-6 text-center">
+          Vídeos Recentes
+        </h2>
+        <div
+          class="container mx-auto text-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3gap-4"
+        >
+          <div class="w-full h-64 flex gap 4 justify-between">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/TIFnj-WTl10?si=wdEMynEjpx5qSuXF"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="w-full h-64 flex justify-between">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/IQxgmfB4Y9M?si=AMFwzHz_jOqb9ZgQ"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+      <!-- Image Carousel Section -->
+      <section>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 class="text-3xl font-extrabold text-gray-900">
+            Venha nos visitar
+          </h2>
+          <p class="mt-4 text-lg text-gray-600 mb-4">
+            Visite nossa loja na rua Amador Araujo, 146, barro. <br />A equipe
+            FJTelecom espera por você!
+          </p>
+          <div class="relative w-full max-w-lg mx-auto overflow-hidden m-6">
+            <div
+              class="carousel-images flex transition-transform duration-500 ease-in-out"
+            >
+              <img
+                src="assets/imagem1.jpg"
+                class="w-full h-64 object-cover rounded-lg"
+                alt="Imagem 1"
+              />
+              <img
+                src="assets/imagem2.jpg"
+                class="w-full h-64 object-cover rounded-lg"
+                alt="Imagem 2"
+              />
+              <img
+                src="assets/imagem1.jpg"
+                class="w-full h-64 object-cover rounded-lg"
+                alt="Imagem 3"
+              />
+            </div>
+            <div class="absolute inset-0 flex items-center justify-between p-4">
+              <button
+                title="generico"
+                class="prev bg-gray-900 text-white p-2 rounded-full hover:bg-gray-700"
+              >
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button
+                title="generic"
+                class="next bg-gray-900 text-white p-2 rounded-full hover:bg-gray-700"
+              >
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+      <div class="container mx-auto text-center">
+        <p>&copy; 2024 FJTelecom. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script>
+      // Simple Carousel Script
+      const images = document.querySelector(".carousel-images");
+      const totalImages = images.children.length;
+      let currentIndex = 0;
+
+      document.querySelector(".prev").addEventListener("click", () => {
+        currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+        images.style.transform = `translateX(-${currentIndex * 100}%)`;
+      });
+
+      document.querySelector(".next").addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % totalImages;
+        images.style.transform = `translateX(-${currentIndex * 100}%)`;
+      });
+    </script>
+  </body>
+</html>

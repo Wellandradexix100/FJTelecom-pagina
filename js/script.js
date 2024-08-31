@@ -146,28 +146,5 @@ document.getElementById("menu-toggle").addEventListener("click", function () {
   var menu = document.getElementById("menu");
   menu.classList.toggle("hidden");
 });
-// script.js
+
 let index = 0;
-
-function showSlide(n) {
-  const slides = document.querySelectorAll(".carousel-images img");
-  if (n >= slides.length) index = 0;
-  if (n < 0) index = slides.length - 1;
-  const offset = -index * 100; // Move the container by a percentage based on index
-  document.querySelector(
-    ".carousel-images"
-  ).style.transform = `translateX(${offset}%)`;
-}
-
-function nextSlide() {
-  index++;
-  showSlide(index);
-}
-
-function prevSlide() {
-  index--;
-  showSlide(index);
-}
-
-// Initialize
-showSlide(index);

@@ -108,3 +108,63 @@
   align-items: center;
   justify-content: flex-end;
 }
+
+.footer {
+  background-color: #1d4097;
+  color: white;
+}
+
+i.fa-facebook {
+  color: blue;
+}
+
+i.fa-instagram {
+  background-image: linear-gradient(to bottom, #293fdc, #fb2f98, #fe9200);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: black;
+}
+
+i.fa-whatsapp {
+  color: rgb(9, 255, 0);
+}
+@media (max-width: 76.8rem) {
+  .social-container {
+    padding-left: 0;
+    text-align: center;
+  }
+  .footer .footer-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .footer-info-item {
+    padding-left: 0;
+    width: auto;
+    text-align: center;
+  }
+
+  .footer .footer-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .footer-links-column {
+    width: 100%;
+  }
+  .footer .footer-links-column ul :hover {
+    color: #09ff00;
+    text-decoration: none;
+  }
+
+  .footer-links-column ul li {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .footer-links-column h4 {
+    padding-left: 0;
+    text-align: center;
+  }
+}

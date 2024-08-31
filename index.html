@@ -23,14 +23,15 @@
           <img src="assets/Logo-1-300x72.png" alt="FJ Telecom Logo" class="h-12 ml-3" />
         </a>
         <ul class="menu hidden lg-1300:flex space-x-6 text-gray-700">
-          <li><a href="#" class="nav-a">Home</a></li>
-          <li><a href="#planos" class="nav-a">Planos</a></li>
-          <li><a href="#sobre-nos" class="nav-a">Quem somos</a></li>
-          <li><a href="#cover" class="nav-a">Cobertura</a></li>
-          <li><a href="#services" class="nav-a">Serviços</a></li>
-          <li><a href="#contact" class="nav-a">Contato</a></li>
-          <li><a href="#apps" class="nav-a">Nossos Apps</a></li>
-          <li><a href="#teste-ookla" class="nav-a">Teste de Velocidade</a></li>
+          <li><a rel="noopener" href="#" class="nav-a">Home</a></li>
+          <li><a rel="noopener" href="https://www.speedtest.net/pt" target="_blank" class="nav-a">Teste de Velocidade</a></li>
+          <li><a rel="noopener" href="#planos" class="nav-a">Planos</a></li>
+          <li><a rel="noopener" href="#sobre-nos" class="nav-a">Quem somos</a></li>
+          <li><a rel="noopener" href="#cover" class="nav-a">Cobertura</a></li>
+          <li><a rel="noopener" href="#services" class="nav-a">Serviços</a></li>
+          <li><a rel="noopener" href="#contact" class="nav-a">Contato</a></li>
+          <li><a rel="noopener" href="#apps" class="nav-a">Nossos App</a></li>
+          
         </ul>
         <button
           title="menu-hamburguer"
@@ -122,7 +123,7 @@
       </div>
     </section>
     <!--Container de planos-->
-    <h2 id="planos" class="text-4xl font-bold text-center mt-10"> Nossos planos </h2>
+    <h2 id="planos" class="text-4xl font-bold text-center text-gray-800 mb-5 mt-10"> Nossos planos </h2>
     <p class="text-lg text-center mt-5">Planos Feitos Sob Medida para Suas Necessidades</p>
     <section
       class="container mx-auto m-15 mb-10 mt-10 columns-5"
@@ -133,8 +134,8 @@
     
 
     <!--section quem somos-->
-    <section id="sobre-nos" class="container mx-auto border-2">
-      <div class="text-4xl font-bold text-center mt-10">Sobre nós</div>
+    <section id="sobre-nos" class="container mx-auto px-4 py-10 bg-gray-50 rounded-lg shadow-lg">
+      <div class="text-4xl font-bold text-center text-gray-800 mb-5">Sobre nós</div>
       <p class="text-lg text-center mt-5">
 
       </p>
@@ -223,6 +224,127 @@
     </div>
   </div>
 </section>
+<!--Contato-->
+<section id="contact" class="container mx-auto px-4 py-10 bg-gray-50 rounded-lg shadow-lg">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="text-3xl font-extrabold text-gray-900">Fale Conosco</h2>
+    <p class="mt-4 text-lg text-gray-600">
+      Estamos aqui para ajudar! Entre em contato conosco para suporte, informações ou sugestões. Nossa equipe está pronta para atender você.
+    </p>
+    <div class="bg-gray-100 p-6">
+      <div class="container mx-auto">
+        <div class="flex flex-col md:flex-row items-stretch">
+            <div class="w-full md:w-1/2 p-4 flex items-center justify-center">
+                <img src="assets/pessoas-que-trabalham-no-call-center.png" alt="Imagem de Contato" class="rounded-lg shadow-lg h-full object-cover">
+            </div>
+            <div class="w-full md:w-1/2 p-4 bg-white rounded-lg shadow-lg flex flex-col justify-center">
+                <h2 class="text-2xl font-bold mb-6 text-gray-700">Entre em Contato</h2>
+                <form action="#" method="POST">
+                    <div class="mb-4">
+                        <label for="nome" class="block text-gray-700 text-sm font-bold mb-2">Nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Seu email" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div class="mb-4">
+                        <label for="mensagem" class="block text-gray-700 text-sm font-bold mb-2">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Sua mensagem" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                    </div>
+                    <div class="text-right">
+                        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition duration-300">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Aplicativo da fj telecom-->
+<section class="container mx-auto px-4 py-10 bg-gray-50 rounded-lg shadow-lg">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="text-3xl font-extrabold text-gray-900">Transforme sua Conexão com Nosso App Exclusivo</h2>
+    <p class="mt-4 text-lg text-gray-600">
+      Gerencie sua conta, acompanhe seu consumo e resolva problemas técnicos com apenas alguns toques, tudo diretamente do seu smartphone.
+    </p>
+  <div>
+    <img src="" alt="">
+  </div>
+</section>
+<!--rodapé do site-->
+<footer class="footer container mx-auto px-4 py-10 rounded-lg shadow-lg" id="links">
+  <div class="footer-content container mx-auto">
+    <div class="footer-info flex flex-wrap justify-center gap-8 mb-8">
+      <div class="footer-info-item flex-1 text-center max-w-xs">
+        <i class="fas fa-map fa-3x"></i>
+        <p><strong>Localização</strong></p>
+        <p>R. Ponta Porã, 113 - Barro</p>
+      </div>
+      <div class="footer-info-item flex-1 text-center max-w-xs">
+        <i class="fas fa-phone fa-3x"></i>
+        <p><strong>Fale conosco</strong></p>
+        <p>(81) 99731-6898 (WhatsApp)</p>
+      </div>
+      <div class="footer-info-item flex-1 text-center max-w-xs">
+        <i class="fas fa-envelope fa-3x"></i>
+        <p><strong>Envie um email</strong></p>
+        <p>suportessacnet@gmail.com</p>
+      </div>
+      <div class="footer-info-item flex-1 text-center max-w-xs">
+        <i class="fas fa-clock fa-3x"></i>
+        <p><strong>Horário de funcionamento</strong></p>
+        <p>08:00 - 19:00h</p>
+        <p>Suporte remoto 24h</p>
+      </div>
+    </div>
+    <div class="footer-links grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-center mb-8">
+      <div class="footer-links-column">
+        <h4 class="text-green-500 mb-4">Links rápidos</h4>
+        <ul class="space-y-2">
+          <li><a href="#sobre" class="hover:underline">Sobre</a></li>
+          <li><a href="blog.html" rel="noopener" target="_blank" class="hover:underline">Blog</a></li>
+          <li><a href="#contato" class="hover:underline">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-column">
+        <h4 class="text-green-500 mb-4">Links Casuais</h4>
+        <ul class="space-y-2">
+          <li><a href="privacidade.html" target="_blank" class="hover:underline">Política de Privacidade</a></li>
+          <li><a href="termos.html" target="_blank" class="hover:underline">Termos de Uso</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-column">
+        <div class="social-container text-center">
+          <p class="mb-4">
+            <strong class="text-green-500">FJTelecom</strong><br />
+            Trabalhando sempre para entregar o melhor <br />em serviços de internet para sua casa.
+          </p>
+          <div class="social-icons flex justify-center gap-4">
+            <a href="https://www.instagram.com/fjtelecom/" rel="noopener" target="_blank" aria-label="Instagram">
+              <i class="fab fa-instagram fa-2x"></i>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=+558141029031&text=Ol%C3%A1%20cheguei%20aqui%20atr%C3%A1ves%20do%20site." rel="noopener" target="_blank" aria-label="WhatsApp">
+              <i class="fab fa-whatsapp fa-2x"></i>
+            </a>
+            <a href="https://www.facebook.com/fjinfointernet/" rel="noopener" target="_blank" aria-label="Facebook">
+              <i class="fab fa-facebook fa-2x"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-8">
+      <p>
+        &copy;2024 Desenvolvido por
+        <a href="https://wa.me/message/RB5H7ZXR6R2KA1" rel="noopener" target="_blank" class="text-green-500 hover:underline">Wellington Andrade</a>
+        - Todos os direitos reservados
+      </p>
+    </div>
+  </div>
+</footer>
 
 <script src="js/script.js"></script>
   </body>
