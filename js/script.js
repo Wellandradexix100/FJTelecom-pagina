@@ -2,7 +2,7 @@ function getPlanosHTML() {
   return `
           <div class="flex flex-wrap justify-center gap-4">
     <!-- Card 200 MEGA -->
-    <div class="max-w-xs bg-white shadow-lg rounded-lg overflow-hidden border border-gray-200">
+    <div id="plans" class="max-w-xs bg-white shadow-lg rounded-lg overflow-hidden border border-gray-200">
         <div class="bg-blue-700 text-white text-center py-4">
             <h2 class="text-2xl font-bold">200 MEGA</h2>
             <p class="text-sm text-yellow-500">FJ CONNECT</p>
@@ -27,7 +27,7 @@ function getPlanosHTML() {
     </div>
 
     <!-- Card 400 MEGA -->
-    <div class="max-w-xs bg-white shadow-lg rounded-lg overflow-hidden border border-gray-200">
+    <div id="plans" class="max-w-xs bg-white shadow-lg rounded-lg overflow-hidden border border-gray-200">
         <div class="bg-blue-700 text-white text-center py-4">
             <h2 class="text-2xl font-bold">400 MEGA</h2>
             <p class="text-sm text-yellow-500">FJ SUPER</p>
@@ -52,7 +52,7 @@ function getPlanosHTML() {
     </div>
 
     <!-- Card 500 MEGA -->
-    <div class="max-w-xs bg-white shadow-lg rounded-lg overflow-hidden border border-gray-200">
+    <div id="plans" class="max-w-xs bg-white shadow-lg rounded-lg overflow-hidden border border-gray-200">
         <div class="bg-blue-700 text-white text-center py-4">
             <h2 class="text-2xl font-bold">500 MEGA</h2>
             <p class="text-sm text-yellow-500">FJ HIPER</p>
@@ -78,7 +78,7 @@ function getPlanosHTML() {
     </div>
 
     <!-- Card 650 MEGA -->
-    <div class="max-w-xs bg-white shadow-lg rounded-lg overflow-hidden border border-gray-200">
+    <div id="plans" class="max-w-xs bg-white shadow-lg rounded-lg overflow-hidden border border-gray-200">
         <div class="bg-blue-700 text-white text-center py-4">
             <h2 class="text-2xl font-bold">650 MEGA</h2>
             <p class="text-sm text-yellow-500">FJ MEGA</p>
@@ -105,7 +105,7 @@ function getPlanosHTML() {
     </div>
 
     <!-- Card 1GB -->
-    <div class="max-w-xs bg-white shadow-lg rounded-lg overflow-hidden border border-gray-200">
+    <div id="plans" class="max-w-xs bg-white shadow-lg rounded-lg overflow-hidden border border-gray-200">
         <div class="bg-blue-700 text-white text-center py-4">
             <h2 class="text-2xl font-bold">1 GB</h2>
             <p class="text-sm text-yellow-500">FJ ULTRA</p>

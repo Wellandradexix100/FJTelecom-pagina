@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
   padding: 0;
   margin: 0;
@@ -73,6 +77,10 @@
   display: none;
 }
 
+#plans:hover {
+  transform: scale(1.05);
+  background-color: whitesmoke;
+}
 @media (min-width: 768px) {
   .navbar .menu {
     display: flex;
