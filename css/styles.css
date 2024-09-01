@@ -130,6 +130,13 @@ i.fa-whatsapp {
   color: rgb(9, 255, 0);
 }
 @media (max-width: 76.8rem) {
+  .highlighted-text {
+    background-color: rgba(0, 0, 0, 0.568);
+    color: #ffffff;
+    display: inline;
+    border-radius: 0.4rem;
+  }
+
   .social-container {
     padding-left: 0;
     text-align: center;
