@@ -73,6 +73,38 @@
   display: none;
 }
 
+.fa-map {
+  background-image: linear-gradient(to bottom, #ff7300, #fb4e2fc4, #ffffff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: rgb(255, 153, 0);
+}
+
+.fa-phone {
+  background-image: linear-gradient(to bottom, #ff7300, #fb4e2fc4, #ffffff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: rgb(255, 115, 0);
+}
+
+.fa-envelope {
+  background-image: linear-gradient(to bottom, #ff7300, #fb4e2fc4, #ffffff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: black;
+}
+
+.fa-clock {
+  background-image: linear-gradient(to bottom, #ff7300, #fb4e2fc4, #ffffff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: black;
+}
+
 #plans:hover {
   transform: scale(1.05);
   background-color: whitesmoke;
@@ -144,10 +176,9 @@ i.fa-whatsapp {
 }
 @media (max-width: 76.8rem) {
   .highlighted-text {
-    background-color: rgba(0, 0, 0, 0.568);
+    background-color: rgba(255, 115, 0, 0.575);
     color: #ffffff;
-    display: inline;
-    border-radius: 0.4rem;
+    border-radius: 0.8rem;
   }
 
   .social-container {
@@ -174,7 +205,7 @@ i.fa-whatsapp {
     width: 100%;
   }
   .footer .footer-links-column ul :hover {
-    color: #09ff00;
+    color: #ffa600;
     text-decoration: none;
   }
 
