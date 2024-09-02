@@ -90,10 +90,23 @@
   transform: scale(1.05);
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1100px) {
   .navbar .menu {
     display: flex;
   }
+}
+
+.banner {
+  margin-top: 0;
+}
+
+.navbar {
+  font-size: 1rem;
+}
+
+.cta-button {
+  margin-right: 3rem;
+  text-align: center;
 }
 
 .nav-a:hover {

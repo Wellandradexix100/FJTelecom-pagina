@@ -22,7 +22,7 @@
         <a href="#">
           <img src="./assets/Logo-1-300x72.png" alt="FJ Telecom Logo" class="h-12 ml-3" />
         </a>
-        <ul class="menu hidden lg-1300:flex space-x-6 text-gray-700">
+        <ul class="menu hidden lg:flex space-x-6 text-gray-700">
           <li><a rel="noopener" href="#" class="nav-a">Home</a></li>
           <li><a rel="noopener" href="https://www.speedtest.net/pt" target="_blank" class="nav-a">Teste de Velocidade</a></li>
           <li><a rel="noopener" href="#planos" class="nav-a">Planos</a></li>
@@ -36,7 +36,7 @@
         <button
           title="menu-hamburguer"
           id="menu-toggle"
-          class="lg-1300:hidden p-2 text-gray-700 hover:text-red-500 focus:outline-none"
+          class="lg:hidden p-2 text-gray-700 hover:text-red-500 focus:outline-none"
         >
           <svg
             class="w-6 h-6"
@@ -55,7 +55,7 @@
         </button>
         <ul
           id="menu"
-          class="lg-1300:hidden absolute top-16 right-0 bg-white shadow-lg w-44 py-2 hidden"
+          class="lg:hidden absolute top-16 right-0 bg-white shadow-lg w-44 py-2 hidden"
         >
           <li>
             <a href="#" class="block px-4 py-2 hover:bg-gray-200">Home</a>
@@ -112,10 +112,13 @@
           <h1 class=" text-6xl font-bold mb-4">
             Conecte-se com a melhor internet da região!
           </h1>
-          <p class="text-lg mb-4">
-            <span class="highlighted-text">Planos acessíveis e soluções confiáveis para você e sua família.
-              Venha descobrir como podemos transformar sua experiência online!</span>
-          </p>
+          <div>
+            <p class="text-lg mb-4 highlighted-text">
+              Planos acessíveis e soluções confiáveis para você e sua família.
+                Venha descobrir como podemos transformar sua experiência online!
+            </p>
+          </div>
+          
           <a href="#planos" class="cta-button-p inline-block"
             >Escolha seu plano agora!</a
           >
