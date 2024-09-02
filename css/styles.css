@@ -181,6 +181,10 @@ i.fa-whatsapp {
     border-radius: 0.8rem;
   }
 
+  .responsive-bt {
+    text-align: center;
+  }
+
   .social-container {
     padding-left: 0;
     text-align: center;
