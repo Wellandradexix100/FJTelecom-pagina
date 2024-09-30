@@ -14,7 +14,8 @@
       {
         "ignore": [
           "iframe[loading]",
-          "iframe[allow]"
+          "iframe[allow]",
+          "iframe[referrerpolicy=no-referrer-when-downgrade]"
         ]
       }
     ]
