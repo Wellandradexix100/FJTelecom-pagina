@@ -17,15 +17,16 @@
 
 .banner {
   background-image: url("../assets/home.png");
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
-  min-height: 100vh;
+  min-height: 88vh;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   color: rgb(255, 255, 255);
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 10rem;
   padding: 0 1rem;
   text-shadow: 0.4rem 0.4rem 0.8rem rgba(0, 0, 0, 0.5);
   font-weight: 600;
@@ -35,6 +36,7 @@
   display: flex;
   max-width: 800px;
   width: 100%;
+  padding-right: 7rem;
 }
 
 .cta-button {
@@ -67,10 +69,6 @@
 .cta-button-p:hover {
   background-color: blue;
   transform: scale(1.05);
-}
-
-.hidden {
-  display: none;
 }
 
 .fa-map {
@@ -130,6 +128,7 @@
 
 .banner {
   margin-top: 0;
+  min-height: 88vh;
 }
 
 .navbar {
@@ -175,6 +174,18 @@ i.fa-whatsapp {
   color: rgb(9, 255, 0);
 }
 @media (max-width: 76.8rem) {
+  .banner {
+    background-size: cover;
+  }
+
+  .banner-content {
+    display: flex;
+    max-width: 800px;
+    width: 100%;
+    padding-right: 0;
+    margin-top: 3rem;
+  }
+
   .highlighted-text {
     background-color: rgba(255, 115, 0, 0.575);
     color: #ffffff;

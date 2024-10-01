@@ -26,7 +26,7 @@
           <li><a rel="noopener" href="#" class="nav-a">Home</a></li>
           <li><a rel="noopener" href="https://www.speedtest.net/pt" target="_blank" class="nav-a">Teste de Velocidade</a></li>
           <li><a rel="noopener" href="#planos" class="nav-a">Planos</a></li>
-          <li><a rel="noopener" href="#sobre-nos" class="nav-a">Quem somos</a></li>
+          <li><a rel="noopener" href="#depoimentos" class="nav-a">Sobre Nós</a></li>
           <li><a rel="noopener" href="#cover" class="nav-a">Cobertura</a></li>
           <li><a rel="noopener" href="#services" class="nav-a">Serviços</a></li>
           <li><a rel="noopener" href="#contact" class="nav-a">Contato</a></li>
@@ -73,7 +73,7 @@
             >
           </li>
           <li>
-            <a href="#sobre-nos" class="block px-4 py-2 hover:bg-gray-200">Quem somos</a>
+            <a href="#depoimentos" class="block px-4 py-2 hover:bg-gray-200">Sobre Nós</a>
           </li>
           <li>
             <a href="#cover" class="block px-4 py-2 hover:bg-gray-200">Cobertura</a>
@@ -135,18 +135,38 @@
       class="container mx-auto m-15 mb-10 mt-10 columns-5"
       id="planos-container"
     ></section>
-      
     </section>
-    
-
     <!--section quem somos-->
-    <section id="sobre-nos" class="container mx-auto px-4 py-10 bg-gray-50 rounded-lg shadow-lg">
-      <div class="text-4xl font-bold text-center text-gray-800 mb-5">Sobre nós</div>
-      <p class="text-lg text-center mt-5">
-
-      </p>
-    </section>
-
+    <section id="depoimentos" class="container mx-auto px-4 py-10 bg-gray-100 rounded-lg shadow-lg">
+      <div class="text-4xl font-bold text-center text-gray-800 mb-5">O que nossos clientes dizem</div>
+      
+      <div class="relative">
+          <div class="overflow-hidden">
+              <div class="flex transition-transform duration-300 transform" id="carousel">
+                  <!-- Comentário 1 -->
+                  <div class="w-full  flex-shrink-0 text-lg text-center p-4">
+                      <img src="https://lh3.googleusercontent.com/a-/ALV-UjULhCZpQyfge04TGvGLzIvGhOyl4SKGmn7HXxPS_huajm7QsKBK=w60-h60-p-rp-mo-ba3-br100" alt="Cliente 1" class="w-24 h-24 rounded-full mx-auto mb-4">
+                      <p>"Suporte excelente, fiquei surpreendido. Atendimento rápido e descontraído, nada engessado e muito profissionais. Recomendo demais. Além da qualidade da conexão, estão de parabéns! Superaram as expectativas com App moderno e serviço muito bom. Vlw!!!"</p>
+                      <p class="font-bold">- Ramon Melo</p>
+                  </div>
+                  <!-- Comentário 2 -->
+                  <div class="w-full flex-shrink-0 text-lg text-center p-4">
+                      <img src="https://lh3.googleusercontent.com/a-/ALV-UjXpLcXEV931ya7F8d3gI6ErThHfh3Ar44MiVwh-cX-CkxLtuoQ=w60-h60-p-rp-mo-br100" alt="Cliente 2" class="w-24 h-24 rounded-full mx-auto mb-4">
+                      <p>"Atendimento de qualidade com serviço impecável e Internet super rápida, recomendo!"</p>
+                      <p class="font-bold">- Uilson Junior</p>
+                  </div>
+                  <!-- Comentário 3 -->
+                  <div class="w-full flex-shrink-0 text-lg text-center p-4">
+                      <img src="https://lh3.googleusercontent.com/a-/ALV-UjVPMZaaG0wZXVgQm9cXn3Ak1t5sfe7UdlqxxTEul8X0nvtlrhSECA=w60-h60-p-rp-mo-br100" alt="Cliente 3" class="w-24 h-24 rounded-full mx-auto mb-4">
+                      <p>"Recomendo muito, internet de alta qualidade, atendimento de primeira, serviço de prontidão supera as expectativas, só tenho coisas boas a falar."</p>
+                      <p class="font-bold">- Amauri Barbosa</p>
+                  </div>
+              </div>
+          </div>
+          <button onclick="prevSlide()" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white rounded-full p-2">❮</button>
+          <button onclick="nextSlide()" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white rounded-full p-2">❯</button>
+      </div>
+  </section>
     <!--section area de cobertura-->
 <section id="cover" class="container mx-auto px-4 py-10 bg-gray-50 rounded-lg shadow-lg">
   <div class="text-4xl font-bold text-center text-gray-800 mb-5">
@@ -270,58 +290,68 @@
 </section>
 
 <!--Aplicativo da fj telecom-->
-<section id="apps" class="bg-gray-100 py-10">
-  <div class="container mx-auto flex flex-col md:flex-row items-center">
+<section id="apps" class="bg-gray-100 py-10 mb-10"> 
+  <div class="container mx-auto flex flex-col md:flex-row-reverse items-center">
     
     <!-- Texto no lado esquerdo -->
-    <section id="apps" class="bg-gray-100 py-10 px-4">
+    <section class="bg-gray-100 py-10 px-4">
       <div class="container mx-auto flex flex-col-reverse md:flex-row items-center">
     
         <!-- Texto no lado esquerdo -->
         <div class="md:w-1/2 text-left mt-8 md:mt-0 md:pr-10">
           <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-center">Transforme sua Conexão com Nosso App Exclusivo</h2>
+
+          <!-- Imagem no modo mobile -->
+          <div class="block md:hidden mb-6 justify-center">
+            <img src="./assets/app.jpeg" alt="Imagem do App Exclusivo" class="w-full sm:w-2/3 h-auto rounded-lg shadow-lg">
+          </div>
+
           <p class="text-base sm:text-lg mb-6 text-center">Baixe nosso aplicativo e tenha controle total da sua internet com facilidade e conveniência.</p>
-          <div class="mt-4 flex flex-col sm:flex-row">
-            <a href="https://play.google.com/store/apps/details?id=br.com.appdoprovedor.fjtelecom" class="text-center bg-blue-500 text-white py-3 px-6 mb-4 sm:mb-0 sm:mr-4 rounded-lg shadow hover:bg-blue-600 transition">Baixar para Android</a>
+          
+          <!-- Centralizando os botões -->
+          <div class="mt-4 flex justify-center space-x-4">
+            <a href="https://play.google.com/store/apps/details?id=br.com.appdoprovedor.fjtelecom" class="text-center bg-blue-500 text-white py-3 px-6 rounded-lg shadow hover:bg-blue-600 transition">Baixar para Android</a>
             <a href="https://apps.apple.com/br/app/fj-telecom/id1588438114?l=en-GB" class="text-center bg-green-500 text-white py-3 px-6 rounded-lg shadow hover:bg-green-600 transition">Baixar para iOS</a>
           </div>
         </div>
     
-        <!-- Imagem no lado direito -->
-        <div class="md:w-1/2 flex justify-center">
+        <!-- Imagem no lado direito no desktop -->
+        <div class="hidden md:block md:w-1/2 justify-center">
           <img src="./assets/app.jpeg" alt="Imagem do App Exclusivo" class="w-full sm:w-2/3 h-auto rounded-lg shadow-lg">
         </div>
         
       </div>
     </section>
-    
-<!--rodapé do site-->
-<footer class="footer container mx-auto px-4 py-10 rounded-lg shadow-lg" id="links">
+  </div>
+</section>
+
+<!-- Rodapé do site -->
+<footer class="footer container mx-auto px-4 py-10 bg-blue-900 rounded-lg shadow-lg" id="links">
   <div class="footer-content container mx-auto">
     <div class="footer-info flex flex-wrap justify-center gap-8 mb-8">
-      <div class="footer-info-item flex-1 text-center max-w-xs">
+      <div class="footer-info-item flex-1 text-center max-w-xs text-white">
         <i class="fas fa-map fa-3x"></i>
         <p><strong>Localização</strong></p>
         <p>R. Amador Araujo, 146 - Barro</p>
       </div>
-      <div class="footer-info-item flex-1 text-center max-w-xs">
+      <div class="footer-info-item flex-1 text-center max-w-xs text-white">
         <i class="fas fa-phone fa-3x"></i>
         <p><strong>Fale conosco</strong></p>
         <p>(81) 4102-9031 (WhatsApp)</p>
       </div>
-      <div class="footer-info-item flex-1 text-center max-w-xs">
+      <div class="footer-info-item flex-1 text-center max-w-xs text-white">
         <i class="fas fa-envelope fa-3x"></i>
         <p><strong>Envie um email</strong></p>
         <p>contato@fjtelecom.com.br</p>
       </div>
-      <div class="footer-info-item flex-1 text-center max-w-xs">
+      <div class="footer-info-item flex-1 text-center max-w-xs text-white">
         <i class="fas fa-clock fa-3x"></i>
         <p><strong>Horário de funcionamento</strong></p>
         <p>08:00 - 18:00h</p>
         <p>Suporte remoto 24h</p>
       </div>
     </div>
-    <div class="footer-links grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-center mb-8">
+    <div class="footer-links grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-center mb-8 text-white">
       <div class="footer-links-column">
         <h4 class="text-green-500 mb-4">Links rápidos</h4>
         <ul class="space-y-2">
@@ -339,7 +369,7 @@
       </div>
       <div class="footer-links-column">
         <div class="social-container text-center">
-          <p class="mb-4">
+          <p class="mb-4 text-white">
             <strong class="text-green-500">FJTelecom</strong><br />
             Trabalhando sempre para entregar o melhor <br />em serviços de internet para sua casa.
           </p>
@@ -357,7 +387,7 @@
         </div>
       </div>
     </div>
-    <div class="text-center mt-8">
+    <div class="text-center mt-8 text-white">
       <p>
         &copy;2024 Desenvolvido por
         <a href="https://wa.me/message/RB5H7ZXR6R2KA1" rel="noopener" target="_blank" class="text-green-500 hover:underline">Wellington Andrade</a>
@@ -366,6 +396,7 @@
     </div>
   </div>
 </footer>
+
 
 <script src="js/script.js"></script>
   </body>
